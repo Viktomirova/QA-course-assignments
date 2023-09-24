@@ -1,0 +1,14 @@
+﻿double nylonPrice = 1.5;
+double paintPrice = 14.5;
+double thinnerPrice = 5;
+int nylonQuantity = int.Parse(Console.ReadLine());
+int payntQuantity = int.Parse(Console.ReadLine());
+int thinnerQuantity = int.Parse(Console.ReadLine());
+int hours = int.Parse(Console.ReadLine());
+double nylon = nylonPrice * (nylonQuantity + 2);
+double paint = paintPrice * (payntQuantity + payntQuantity * 0.1);
+double thinner = thinnerPrice * thinnerQuantity;
+double price = nylon + paint + thinner + 0.4;
+double craftsmen = price * 0.3 * hours;
+double totalPrice = price + craftsmen;
+Console.WriteLine(totalPrice);

@@ -1,0 +1,11 @@
+﻿double chickenPrice = 10.35;
+double fishPrice = 12.40;
+double vegetarianPrice = 8.15;
+double deliveryPrice = 2.5;
+int chickenMenus = int.Parse(Console.ReadLine());
+int fishMenus = int.Parse(Console.ReadLine());
+int vegetarianMenus = int.Parse(Console.ReadLine());
+double menusCost = chickenMenus * chickenPrice + fishMenus * fishPrice + vegetarianMenus * vegetarianPrice;
+double dessertCost = menusCost * 0.2;
+double totalPrice = menusCost + dessertCost + deliveryPrice;
+Console.WriteLine(totalPrice);
