@@ -13,13 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MandatoryLiterature", "Mand
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeachingMaterials", "TeachingMaterials\TeachingMaterials.csproj", "{5BD8615D-A881-4107-B2BA-97EBFF9208F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redecorating", "Redecorating\Redecorating.csproj", "{24494E96-91CA-4D31-87CA-EC5A61392601}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Redecorating", "Redecorating\Redecorating.csproj", "{24494E96-91CA-4D31-87CA-EC5A61392601}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDelivery", "FoodDelivery\FoodDelivery.csproj", "{F70F237B-362A-4C7C-A6A0-615EB1636538}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodDelivery", "FoodDelivery\FoodDelivery.csproj", "{F70F237B-362A-4C7C-A6A0-615EB1636538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketballEquipment", "BasketballEquipment\BasketballEquipment.csproj", "{E2FEA1ED-2783-4ED4-B1F5-0DBDA0EA70E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasketballEquipment", "BasketballEquipment\BasketballEquipment.csproj", "{E2FEA1ED-2783-4ED4-B1F5-0DBDA0EA70E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aquarium", "Aquarium\Aquarium.csproj", "{D43393F7-E48B-4430-98A9-102DE9BE19F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aquarium", "Aquarium\Aquarium.csproj", "{D43393F7-E48B-4430-98A9-102DE9BE19F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{19C73F40-8664-414D-A2DF-4EB404A2D3A2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{D43393F7-E48B-4430-98A9-102DE9BE19F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D43393F7-E48B-4430-98A9-102DE9BE19F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D43393F7-E48B-4430-98A9-102DE9BE19F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19C73F40-8664-414D-A2DF-4EB404A2D3A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C73F40-8664-414D-A2DF-4EB404A2D3A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C73F40-8664-414D-A2DF-4EB404A2D3A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C73F40-8664-414D-A2DF-4EB404A2D3A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
