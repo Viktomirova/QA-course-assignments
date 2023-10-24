@@ -23,29 +23,35 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TopNumber", "TopNumber\TopN
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NxNmatrix", "NxNmatrix\NxNmatrix.csproj", "{0D3EC745-04B5-450D-84C5-20D443CEA187}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignOfIntegerNumbers", "SignOfIntegerNumbers\SignOfIntegerNumbers.csproj", "{BDE57590-8BCD-4171-B7ED-50086ABC6E48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignOfIntegerNumbers", "SignOfIntegerNumbers\SignOfIntegerNumbers.csproj", "{BDE57590-8BCD-4171-B7ED-50086ABC6E48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades", "Grades\Grades.csproj", "{7A5ED780-79FC-484C-B8C3-93EF748B9470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grades", "Grades\Grades.csproj", "{7A5ED780-79FC-484C-B8C3-93EF748B9470}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintingTriangle", "PrintingTriangle\PrintingTriangle.csproj", "{60F71676-5520-4423-A315-B85FE61CD7FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintingTriangle", "PrintingTriangle\PrintingTriangle.csproj", "{60F71676-5520-4423-A315-B85FE61CD7FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculateRectangleArea", "CalculateRectangleArea\CalculateRectangleArea.csproj", "{A885B6AF-4E99-4FC2-9E53-9B0AAD2EFD1A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculateRectangleArea", "CalculateRectangleArea\CalculateRectangleArea.csproj", "{A885B6AF-4E99-4FC2-9E53-9B0AAD2EFD1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatString", "RepeatString\RepeatString.csproj", "{F32D4521-20B5-4FE5-B21F-5D58F64C7378}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatString", "RepeatString\RepeatString.csproj", "{F32D4521-20B5-4FE5-B21F-5D58F64C7378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathPower", "MathPower\MathPower.csproj", "{E3B623EF-E6CC-4D39-A7A6-2B9145893F6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathPower", "MathPower\MathPower.csproj", "{E3B623EF-E6CC-4D39-A7A6-2B9145893F6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreaterOfTwoValues", "GreaterOfTwoValues\GreaterOfTwoValues.csproj", "{3DF1BCB1-ED3B-41C0-AD9D-D9111E0EB881}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GreaterOfTwoValues", "GreaterOfTwoValues\GreaterOfTwoValues.csproj", "{3DF1BCB1-ED3B-41C0-AD9D-D9111E0EB881}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplyEvensByOdds", "MultiplyEvensByOdds\MultiplyEvensByOdds.csproj", "{26A9DC7A-2647-4A51-8AFE-FDD8695A6503}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplyEvensByOdds", "MultiplyEvensByOdds\MultiplyEvensByOdds.csproj", "{26A9DC7A-2647-4A51-8AFE-FDD8695A6503}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orders", "Orders\Orders.csproj", "{09965A44-683F-41EB-B41E-B3B1B884D60C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orders", "Orders\Orders.csproj", "{09965A44-683F-41EB-B41E-B3B1B884D60C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplicationSign", "StupidPassword\MultiplicationSign.csproj", "{4098C0A5-5FE8-4519-953D-465C6D45157B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiplicationSign", "StupidPassword\MultiplicationSign.csproj", "{4098C0A5-5FE8-4519-953D-465C6D45157B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyNumbers", "HappyNumbers\HappyNumbers.csproj", "{E98FBF20-0607-4483-9DEB-7E6611B22281}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HappyNumbers", "HappyNumbers\HappyNumbers.csproj", "{E98FBF20-0607-4483-9DEB-7E6611B22281}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetterCombinations", "LetterCombinations\LetterCombinations.csproj", "{FB3500B9-EF28-4629-AD0B-E8570EBDCC08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LetterCombinations", "LetterCombinations\LetterCombinations.csproj", "{FB3500B9-EF28-4629-AD0B-E8570EBDCC08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StupidPasswords", "StupidPasswords\StupidPasswords.csproj", "{F9F714B4-E541-4EF9-A8FB-87F9804C34E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicNumbers", "MagicNumbers\MagicNumbers.csproj", "{C66F0194-537F-4AC2-9110-F270E8714AF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniquePINCodes", "UniquePINCodes\UniquePINCodes.csproj", "{58E1F032-A8D2-4A8F-83A2-24DA2D094A04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -141,6 +147,18 @@ Global
 		{FB3500B9-EF28-4629-AD0B-E8570EBDCC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB3500B9-EF28-4629-AD0B-E8570EBDCC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB3500B9-EF28-4629-AD0B-E8570EBDCC08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F714B4-E541-4EF9-A8FB-87F9804C34E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F714B4-E541-4EF9-A8FB-87F9804C34E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F714B4-E541-4EF9-A8FB-87F9804C34E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F714B4-E541-4EF9-A8FB-87F9804C34E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66F0194-537F-4AC2-9110-F270E8714AF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66F0194-537F-4AC2-9110-F270E8714AF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66F0194-537F-4AC2-9110-F270E8714AF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66F0194-537F-4AC2-9110-F270E8714AF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58E1F032-A8D2-4A8F-83A2-24DA2D094A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58E1F032-A8D2-4A8F-83A2-24DA2D094A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58E1F032-A8D2-4A8F-83A2-24DA2D094A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58E1F032-A8D2-4A8F-83A2-24DA2D094A04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

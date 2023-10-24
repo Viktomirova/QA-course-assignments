@@ -1,15 +1,15 @@
 ﻿string product = Console.ReadLine();
 int quantity = int.Parse(Console.ReadLine());
 
-CalculateTheTotalPrice(product, quantity);
+Console.WriteLine($"{CalculateTheTotalPrice(product, quantity):F2}");
 
-static void CalculateTheTotalPrice(string product, int quantity)
+static decimal CalculateTheTotalPrice(string product, int quantity)
 {
     decimal priceOfCoffee = 1.50m;
     decimal priceOfWater = 1.00m;
     decimal priceOfCoke = 1.40m;
     decimal priceOfSnacks = 2.00m;
-    decimal result = 1;
+    decimal result = 1m;
     switch (product)
     {
         case "coffee":
@@ -25,5 +25,5 @@ static void CalculateTheTotalPrice(string product, int quantity)
             result = quantity * priceOfSnacks;
             break;
     }
-    Console.WriteLine($"{result:F2}");
+    return result;
 }

@@ -1,16 +1,21 @@
 ﻿int n = int.Parse(Console.ReadLine());
 
-for (int i = 1; i <= n; i++)
+PrintHappyNumber(n);
+
+static void PrintHappyNumber(int n)
 {
-    for (int j = 0; j <= n; j++)
+    for (int i = 1; i <= n; i++)
     {
-        for (int k = 0; k <= n; k++)
+        for (int j = 0; j <= n; j++)
         {
-            for (int l = 0; l <= n; l++)
+            for (int k = 0; k <= n; k++)
             {
-                if (i + j == n && k + l == n)
+                for (int l = 0; l <= n; l++)
                 {
-                    Console.Write($"{i}{j}{k}{l} ");
+                    if (i + j == n && k + l == n)
+                    {
+                        Console.Write($"{i}{j}{k}{l} ");
+                    }
                 }
             }
         }

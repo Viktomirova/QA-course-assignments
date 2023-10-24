@@ -12,7 +12,7 @@ static string PrintSignOfProduct(int a, int b, int c)
 
     if (a == 0 || b == 0 || c == 0)
     {
-        Console.WriteLine("zero");
+        sb.AppendLine("zero");
     }
     else if (a < 0)
     {
@@ -20,22 +20,22 @@ static string PrintSignOfProduct(int a, int b, int c)
         {
             if (c < 0)
             {
-                Console.WriteLine("negative");
+                sb.AppendLine("negative");
             }
             else
             {
-                Console.WriteLine("positive");
+                sb.AppendLine("positive");
             }
         }
         else
         {
             if (c < 0)
             {
-                Console.WriteLine("positive");
+                sb.AppendLine("positive");
             }
             else
             {
-                Console.WriteLine("negative");
+                sb.AppendLine("negative");
             }
         }
     }
@@ -45,22 +45,22 @@ static string PrintSignOfProduct(int a, int b, int c)
         {
             if (c < 0)
             {
-                Console.WriteLine("positive");
+                sb.AppendLine("positive");
             }
             else
             {
-                Console.WriteLine("negative");
+                sb.AppendLine("negative");
             }
         }
         else
         {
             if (c < 0)
             {
-                Console.WriteLine("negative");
+                sb.AppendLine("negative");
             }
             else
             {
-                Console.WriteLine("positive");
+                sb.AppendLine("positive");
             }
         }
     }

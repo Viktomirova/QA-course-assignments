@@ -1,21 +1,26 @@
 ﻿char startLetter = char.Parse(Console.ReadLine());
 char endLetter = char.Parse(Console.ReadLine());
 char excludedLetter = char.Parse(Console.ReadLine());
-int counter = 0;
 
-for (int i = startLetter; i <= endLetter; i++)
+FindAllLetterCombinations(startLetter, endLetter, excludedLetter);
+
+static void FindAllLetterCombinations(char startLetter, char endLetter, char excludedLetter)
 {
-    if (i == excludedLetter) continue;
-    for (int j = startLetter; j <= endLetter; j++)
+    int counter = 0;
+    for (char i = startLetter; i <= endLetter; i++)
     {
-        if (j == excludedLetter) continue;
-        for (int k = startLetter; k <= endLetter; k++)
+        for (char j = startLetter; j <= endLetter; j++)
         {
-            if (k == excludedLetter) continue;
-            Console.Write($"{(char)i}{(char)j}{(char)k} ");
-            counter++;
+            for (char k = startLetter; k <= endLetter; k++)
+            {
+                if (i != excludedLetter && j != excludedLetter && k != excludedLetter)
+                {
+                    Console.Write($"{i}{j}{k} ");
+                    counter++;
+                }
+            }
         }
     }
+    Console.WriteLine();
+    Console.WriteLine(counter);
 }
-Console.WriteLine();
-Console.WriteLine(counter);

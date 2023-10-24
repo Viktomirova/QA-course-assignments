@@ -5,6 +5,10 @@ Console.WriteLine(CalculateMathPower(baseNumber, power));
 
 static double CalculateMathPower(int n, int p)
 {
-    double result = Math.Pow(n, p);
+    double result = 1;
+    for (int i = 1; i <= p; i++)
+    {
+        result *= n;
+    }
     return result;
 }
