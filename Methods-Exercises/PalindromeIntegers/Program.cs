@@ -7,10 +7,10 @@
         break;
     }
 
-    Console.WriteLine(IsPalidrom(input) ? "true" : "false");
+    Console.WriteLine(IsPalindrom(input) ? "true" : "false");
 }
 
-static bool IsPalidrom(string text)
+static bool IsPalindrom(string text)
 {
     bool result = false;
     string firstHalf = "";
