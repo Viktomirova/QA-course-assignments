@@ -38,8 +38,8 @@ public class DrumSetTests
         // Arrange
         decimal money = 100.00m;
         List<int> quality = new List<int>(){1, 2, 3, 4, 5};
-        List<string> command = new List<string>(){"Hit it again, Gabsy!"};
-        string expected = "1 2 3 4 5\nGabsy has 100.00lv.";
+        List<string> command = new List<string>(){"1", "Hit it again, Gabsy!"};
+        string expected = "1 1 2 3 4\nGabsy has 97.00lv.";
 
         // Act
         string result = DrumSet.Drum(money, quality, command);
@@ -52,8 +52,8 @@ public class DrumSetTests
     public void Test_Drum_BalanceZero_WithOneDrumLeftOver_ReturnsCorrectQualityAndAmount()
     {
         decimal money = 0.00m;
-        List<int> quality = new List<int>(){1};
-        List<string> command = new List<string>(){"Hit it again, Gabsy!"};
+        List<int> quality = new List<int>(){1, 3, 4 };
+        List<string> command = new List<string>(){"1", "2", "Hit it again, Gabsy!"};
         string expected = "1\nGabsy has 0.00lv.";
 
         // Act
@@ -66,10 +66,10 @@ public class DrumSetTests
     [Test]
     public void Test_Drum_NotEnoughBalance_RemovesAllDrums_ReturnsCorrectQualityAndAmount()
     {
-        decimal money = 0.00m;
-        List<int> quality = new List<int>(){};
-        List<string> command = new List<string>(){"Hit it again, Gabsy!"};
-        string expected = "\nGabsy has 0.00lv.";
+        decimal money = 1.00m;
+        List<int> quality = new List<int>(){1, 2, 3};
+        List<string> command = new List<string>(){"1", "2", "3", "Hit it again, Gabsy!"};
+        string expected = "\nGabsy has 1.00lv.";
 
         // Act
         string result = DrumSet.Drum(money, quality, command);
