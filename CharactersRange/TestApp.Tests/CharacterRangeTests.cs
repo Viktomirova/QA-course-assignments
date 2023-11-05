@@ -81,4 +81,19 @@ public class CharacterRangeTests
         // Assert
         Assert.That(expected, Is.EqualTo(result));
     }
+
+    [Test]
+    public void Test_GetRange_WithAnySymbolsInOrder_Returns_RightResult()
+    {
+        // Arrange
+        char a = '<';
+        char b = '>';
+        string expected =  "=" ;
+
+        // Act
+        string result = CharacterRange.GetRange(a, b);
+
+        // Assert
+        Assert.That(expected, Is.EqualTo(result));
+    }
 }
