@@ -9,7 +9,7 @@ public class BalancedBracketsTests
     public void Test_IsBalanced_EmptyInput_ShouldReturnTrue()
     {
         // Arrange
-        string[] input = {};
+        string[] input = new []{String.Empty};
 
         // Act
         bool result = BalancedBrackets.IsBalanced(input);
