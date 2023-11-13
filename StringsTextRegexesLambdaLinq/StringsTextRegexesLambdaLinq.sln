@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.34221.33
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseString", "ReverseString\ReverseString.csproj", "{BF5C946E-0E0B-4302-9C3C-BFD36AD71257}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseString", "ReverseString\ReverseString.csproj", "{BF5C946E-0E0B-4302-9C3C-BFD36AD71257}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatString", "RepeatString\RepeatString.csproj", "{FDCABD36-84F4-4E03-92A2-2CDECB4EE38F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepeatString", "RepeatString\RepeatString.csproj", "{FDCABD36-84F4-4E03-92A2-2CDECB4EE38F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Substring", "Substring\Substring.csproj", "{9541AA4B-1447-45F5-8CB2-55B68E531D23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Substring", "Substring\Substring.csproj", "{9541AA4B-1447-45F5-8CB2-55B68E531D23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextFilter", "TextFilter\TextFilter.csproj", "{1F5F23B2-40C6-4110-9E63-5299884FA7B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextFilter", "TextFilter\TextFilter.csproj", "{1F5F23B2-40C6-4110-9E63-5299884FA7B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitsLettersAnOthers", "DigitsLettersAnOthers\DigitsLettersAnOthers.csproj", "{6AEE0AB5-25C0-4B64-A907-92A6D0D1FC31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigitsLettersAnOthers", "DigitsLettersAnOthers\DigitsLettersAnOthers.csproj", "{6AEE0AB5-25C0-4B64-A907-92A6D0D1FC31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchFullName", "MatchFullName\MatchFullName.csproj", "{CE16DA25-A69D-4D30-9A5D-078FE9070E05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchPhoneNumber", "MatchPhoneNumber\MatchPhoneNumber.csproj", "{4F6881C6-A119-4A62-9171-AE50F8EDDCD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MatchDates", "MatchDates\MatchDates.csproj", "{340997E7-75E8-436A-877F-B05C7D49475A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{6AEE0AB5-25C0-4B64-A907-92A6D0D1FC31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AEE0AB5-25C0-4B64-A907-92A6D0D1FC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AEE0AB5-25C0-4B64-A907-92A6D0D1FC31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE16DA25-A69D-4D30-9A5D-078FE9070E05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE16DA25-A69D-4D30-9A5D-078FE9070E05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE16DA25-A69D-4D30-9A5D-078FE9070E05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE16DA25-A69D-4D30-9A5D-078FE9070E05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F6881C6-A119-4A62-9171-AE50F8EDDCD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F6881C6-A119-4A62-9171-AE50F8EDDCD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F6881C6-A119-4A62-9171-AE50F8EDDCD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F6881C6-A119-4A62-9171-AE50F8EDDCD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{340997E7-75E8-436A-877F-B05C7D49475A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{340997E7-75E8-436A-877F-B05C7D49475A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{340997E7-75E8-436A-877F-B05C7D49475A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{340997E7-75E8-436A-877F-B05C7D49475A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
