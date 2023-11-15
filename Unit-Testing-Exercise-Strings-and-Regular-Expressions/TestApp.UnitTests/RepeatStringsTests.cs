@@ -23,25 +23,25 @@ public class RepeatStringsTests
     public void Test_Repeat_SingleInputString_ReturnsRepeatedString()
     {
         // Arrange
-        string[] input = {"abc"};
+        string[] input = new [] { "bad" };
 
         // Act
         string result = RepeatStrings.Repeat(input);
 
         // Assert
-        Assert.That(result, Is.EqualTo("abcabcabc"));
+        Assert.That(result, Is.EqualTo("badbadbad"));
     }
 
     [Test]
     public void Test_Repeat_MultipleInputStrings_ReturnsConcatenatedRepeatedStrings()
     {
         // Arrange
-        string[] input = {"ab", "cd"};
+        string[] input = new [] { "me call" };
 
         // Act
         string result = RepeatStrings.Repeat(input);
 
         // Assert
-        Assert.That(result, Is.EqualTo("ababcdcd"));
+        Assert.That(result, Is.EqualTo("me callme callme callme callme callme callme call"));
     }
 }

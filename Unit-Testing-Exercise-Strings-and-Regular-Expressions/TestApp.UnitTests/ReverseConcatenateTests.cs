@@ -7,16 +7,17 @@ namespace TestApp.UnitTests;
 
 public class ReverseConcatenateTests
 {
-    // TODO: finish the test
     [Test]
     public void Test_ReverseAndConcatenateStrings_EmptyInput_ReturnsEmptyString()
     {
         // Arrange
+        string[] input = Array.Empty<string>();
 
         // Act
-        //string result = ReverseConcatenate.ReverseAndConcatenateStrings(input);
+        string result = ReverseConcatenate.ReverseAndConcatenateStrings(input);
 
         // Assert
+        Assert.That(result, Is.EqualTo(string.Empty));
     }
 
     // TODO: finish the test
@@ -24,34 +25,67 @@ public class ReverseConcatenateTests
     public void Test_ReverseAndConcatenateStrings_SingleString_ReturnsSameString()
     {
         // Arrange
+        string[] input = new[] { "hello" };
 
         // Act
-        //string result = ReverseConcatenate.ReverseAndConcatenateStrings(input);
+        string result = ReverseConcatenate.ReverseAndConcatenateStrings(input);
 
         // Assert
+        Assert.That(result, Is.EqualTo("hello"));
     }
 
     [Test]
     public void Test_ReverseAndConcatenateStrings_MultipleStrings_ReturnsReversedConcatenatedString()
     {
-        // TODO: finish the test
+        // Arrange
+        string[] input = new[] { "world", "123", "hello" };
+        string expected = "hello123world";
+
+        // Act
+        string result = ReverseConcatenate.ReverseAndConcatenateStrings(input);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(expected));
     }
 
     [Test]
     public void Test_ReverseAndConcatenateStrings_NullInput_ReturnsEmptyString()
     {
-        // TODO: finish the test
+        // Arrange
+        string[]? input = null;
+
+        // Act
+        string result = ReverseConcatenate.ReverseAndConcatenateStrings(input);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(string.Empty));
     }
 
     [Test]
     public void Test_ReverseAndConcatenateStrings_WhitespaceInput_ReturnsConcatenatedString()
     {
-        // TODO: finish the test
+        // Arrange
+        string[] input = new[] { "   ", "  ", " " };
+        string expected = "      ";
+
+        // Act
+        string result = ReverseConcatenate.ReverseAndConcatenateStrings(input);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(expected));
     }
 
     [Test]
     public void Test_ReverseAndConcatenateStrings_LargeInput_ReturnsReversedConcatenatedString()
     {
-        // TODO: finish the test
+        // Arrange
+        string[] input = new[] { "world", " ", "hello", " ", "say", " ", "to", " ", "want", " ", "I" };
+        string expected = "I want to say hello world";
+
+        // Act
+        string result = ReverseConcatenate.ReverseAndConcatenateStrings(input);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(expected));
     }
 }

@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 
 namespace TestApp.UnitTests;
 
@@ -21,12 +22,24 @@ public class MatchNamesTests
     [Test]
     public void Test_Match_NoValidNames_ReturnsEmptyString()
     {
-        // TODO: finish the test
+        string names = "JoRn Sm4th and Al23ce JoHNson";
+
+        // Act
+        string result = MatchNames.Match(names);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(string.Empty));
     }
 
     [Test]
     public void Test_Match_EmptyInput_ReturnsEmptyString()
     {
-        // TODO: finish the test
+        string names = string.Empty;
+
+        // Act
+        string result = MatchNames.Match(names);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(string.Empty));
     }
 }

@@ -1,10 +1,11 @@
-﻿using NUnit.Framework;
+﻿using System;
+using System.Linq;
+using NUnit.Framework;
 
 namespace TestApp.UnitTests;
 
 public class SubstringTests
 {
-    // TODO: finish the test
     [Test]
     public void Test_RemoveOccurrences_RemovesSubstringFromMiddle()
     {
@@ -23,8 +24,8 @@ public class SubstringTests
     public void Test_RemoveOccurrences_RemovesSubstringFromStart()
     {
         // Arrange
-        string toRemove = "The quick ";
         string input = "The quick brown fox jumps over the lazy dog";
+        string toRemove = input.Substring(0, 10);
 
         // Act
         string result = Substring.RemoveOccurrences(toRemove, input);
@@ -37,22 +38,22 @@ public class SubstringTests
     public void Test_RemoveOccurrences_RemovesSubstringFromEnd()
     {
         // Arrange
-        string toRemove = " the lazy dog";
         string input = "The quick brown fox jumps over the lazy dog";
+        string toRemove = input.Substring(input.Length - 10, 10);
 
         // Act
         string result = Substring.RemoveOccurrences(toRemove, input);
 
         // Assert
-        Assert.That(result, Is.EqualTo("The quick brown fox jumps over"));
+        Assert.That(result, Is.EqualTo("The quick brown fox jumps over th"));
     }
 
     [Test]
     public void Test_RemoveOccurrences_RemovesAllOccurrences()
     {
         // Arrange
-        string toRemove = "The ";
         string input = "The quick brown fox jumps over the lazy dog";
+        string toRemove = "the";
 
         // Act
         string result = Substring.RemoveOccurrences(toRemove, input);
@@ -60,4 +61,20 @@ public class SubstringTests
         // Assert
         Assert.That(result, Is.EqualTo("quick brown fox jumps over lazy dog"));
     }
+
+    
+    [Test]
+    public void Test_RemoveOccurrences_RemovesAllOccurrences_ReturnEmptyString()
+    {
+        // Arrange
+        string input = "cat cat cat cat cat cat cat ";
+        string toRemove = "cat";
+
+        // Act
+        string result = Substring.RemoveOccurrences(toRemove, input);
+
+        // Assert
+        Assert.That(result, Is.EqualTo(string.Empty));
+    }
+
 }

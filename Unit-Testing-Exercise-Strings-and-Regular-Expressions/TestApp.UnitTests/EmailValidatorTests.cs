@@ -1,13 +1,12 @@
-﻿using NUnit.Framework;
+﻿﻿using NUnit.Framework;
 
 namespace TestApp.UnitTests;
 
 public class EmailValidatorTests
 {
-    // TODO: finish the test
-    //[TestCase()]
-    //[TestCase()]
-    //[TestCase()]
+    [TestCase("name@mail.com")]
+    [TestCase("mail1234@mail.com")]
+    [TestCase("name12.mail%@mail.com")]
     public void Test_ValidEmails_ReturnsTrue(string email)
     {
         // Arrange
@@ -19,10 +18,9 @@ public class EmailValidatorTests
         Assert.That(result, Is.True);
     }
 
-    // TODO: finish the test
-    //[TestCase()]
-    //[TestCase()]
-    //[TestCase()]
+    [TestCase("name@mail-com")]
+    [TestCase("name.mail.com")]
+    [TestCase("name@mail.bg/com")]
     public void Test_InvalidEmails_ReturnsFalse(string email)
     {
         // Arrange
