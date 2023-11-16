@@ -1,27 +1,41 @@
-﻿Dictionary<string, Dictionary<double, int>> orders = new Dictionary<string, Dictionary<double, int>>();
-while (true)
+﻿var products = new Dictionary<string, Item>();
+
+string input;
+
+while ((input = Console.ReadLine()) != "buy")
 {
-    string[] order = Console.ReadLine().Split();
-    string product = order[0];
+    string[] splitedInput = input.Split();
 
-    if (product == "buy")
+    string product = splitedInput[0];
+    double price = double.Parse(splitedInput[1]);
+    int quantity = int.Parse(splitedInput[2]);
+
+    if (!products.ContainsKey(product))
     {
-        break;
-    }
-
-    double price = double.Parse(order[1]);
-    int quantity = int.Parse(order[2]);
-
-    if (orders.ContainsKey(product))
-    {
+        products[product] = new Item(price, quantity);
     }
     else
     {
-        orders.Add(product, new Dictionary<double, int>());
+        products[product].Price = price;
+        products[product].Quantity += quantity;
     }
+
 }
 
-foreach (KeyValuePair<string, Dictionary<double, int>> kvp in orders)
+foreach (var product in products)
 {
-    Console.WriteLine($"{kvp.Key} -> {kvp.Value:F2}");
+    string productName = product.Key;
+    double productTotalPrice = product.Value.Quantity * product.Value.Price;
+    Console.WriteLine($"{productName} -> {productTotalPrice:F2}");
+}
+
+class Item
+{
+    public Item(double price, int quantity)
+    {
+        this.Price = price;
+        this.Quantity = quantity;
+    }
+    public double Price { get; set; }
+    public int Quantity { get; set; }
 }
