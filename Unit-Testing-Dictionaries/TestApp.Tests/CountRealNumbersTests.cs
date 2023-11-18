@@ -49,25 +49,25 @@ public class CountRealNumbersTests
     public void Test_Count_WithNegativeNumbers_ShouldReturnCountString()
     {
         // Arrange
-        int[] array = {-6, -5, -4, -4, -6, -6 };
+        int[] array = { -6, -5, -4, -4, -6, 6 };
 
         // Act
         string result = CountRealNumbers.Count(array);
 
         // Assert
-        Assert.That(result, Is.EqualTo("-6 -> 3\r\n-5 -> 1\r\n-4 -> 2"));
+        Assert.That(result, Is.EqualTo("-6 -> 2\r\n-5 -> 1\r\n-4 -> 2\r\n6 -> 1"));
     }
 
     [Test]
     public void Test_Count_WithZero_ShouldReturnCountString()
     {
         // Arrange
-        int[] array = {0, 1, 2};
+        int[] array = { 0 };
 
         // Act
         string result = CountRealNumbers.Count(array);
 
         // Assert
-        Assert.That(result, Is.EqualTo("0 -> 1\r\n1 -> 1\r\n2 -> 1"));
+        Assert.That(result, Is.EqualTo("0 -> 1"));
     }
 }
