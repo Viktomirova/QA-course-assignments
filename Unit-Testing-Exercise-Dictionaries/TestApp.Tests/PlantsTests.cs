@@ -37,7 +37,13 @@ public class PlantsTests
     public void Test_GetFastestGrowing_WithMultiplePlants_ShouldReturnGroupedPlants()
     {
         // Arrange
-        string[] plants = new string[] { "rose", "lily", "iris", "daisy" };
+        string[] plants = new string[]
+              {
+                  "rose", 
+                  "lily", 
+                  "iris", 
+                  "daisy"
+              };
 
         // Act
         string result = Plants.GetFastestGrowing(plants);
@@ -55,17 +61,23 @@ public class PlantsTests
     public void Test_GetFastestGrowing_WithMixedCasePlants_ShouldBeCaseInsensitive()
     {
         // Arrange
-        string[] plants = new string[] { "daisy", "rose", "lily", "iris" };
+        string[] plants = new string[]
+              {
+                  "daISy", 
+                  "roSe", 
+                  "Lily", 
+                  "iRis"
+              };
 
         // Act
         string result = Plants.GetFastestGrowing(plants);
 
         // Assert
         Assert.That(result, Is.EqualTo("Plants with 4 letters:\r\n" +
-                                       "rose\r\n" +
-                                       "lily\r\n" +
-                                       "iris\r\n" +
+                                       "roSe\r\n" +
+                                       "Lily\r\n" +
+                                       "iRis\r\n" +
                                        "Plants with 5 letters:\r\n" +
-                                       "daisy"));
+                                       "daISy"));
     }
 }
