@@ -42,7 +42,7 @@ public class CountRealNumbersTests
         string result = CountRealNumbers.Count(array);
 
         // Assert
-        Assert.That(result, Is.EqualTo("1 -> 2\r\n2 -> 1\r\n3 -> 3"));
+        Assert.That(result, Is.EqualTo($"1 -> 2{Environment.NewLine}2 -> 1{Environment.NewLine}3 -> 3"));
     }
 
     [Test]
@@ -55,7 +55,7 @@ public class CountRealNumbersTests
         string result = CountRealNumbers.Count(array);
 
         // Assert
-        Assert.That(result, Is.EqualTo("-6 -> 2\r\n-5 -> 1\r\n-4 -> 2\r\n6 -> 1"));
+        Assert.That(result, Is.EqualTo($"-6 -> 2{Environment.NewLine}-5 -> 1{Environment.NewLine}-4 -> 2{Environment.NewLine}6 -> 1"));
     }
 
     [Test]

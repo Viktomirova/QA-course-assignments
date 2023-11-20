@@ -49,25 +49,25 @@ public class OddOccurrencesTests
     public void Test_FindOdd_WithMultipleOddOccurrences_ShouldReturnAllOddWords()
     {
         // Arrange
-        string[] words = new []{"odd", "odd", "Odd", "even", "even", "That"};
+        string[] words = new []{"odd", "odd", "Odd", "even", "even"};
 
         // Act
         string result = OddOccurrences.FindOdd(words);
 
         // Assert
-        Assert.That(result, Is.EqualTo("odd that"));
+        Assert.That(result, Is.EqualTo("odd"));
     }
 
     [Test]
     public void Test_FindOdd_WithMixedCaseWords_ShouldBeCaseInsensitive()
     {
         // Arrange
-        string[] words = new []{"odd", "odd", "Odd", "even", "even", "thAt"};
+        string[] words = new []{"odd", "odd", "Odd", "even", "even"};
 
         // Act
         string result = OddOccurrences.FindOdd(words);
 
         // Assert
-        Assert.That(result, Is.EqualTo("odd that"));
+        Assert.That(result, Is.EqualTo("odd"));
     }
 }

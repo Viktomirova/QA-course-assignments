@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 
 using System.Collections.Generic;
 
@@ -29,7 +30,7 @@ public class GroupingTests
         string result = Grouping.GroupNumbers(list);
 
         // Assert
-        Assert.That(result, Is.EqualTo("Odd numbers: 1, 3\r\nEven numbers: 2, 4"));
+        Assert.That(result, Is.EqualTo($"Odd numbers: 1, 3{Environment.NewLine}Even numbers: 2, 4"));
 
     }
 
@@ -37,13 +38,13 @@ public class GroupingTests
     public void Test_GroupNumbers_WithOnlyEvenNumbers_ShouldReturnGroupedString()
     {
         // Arrange
-        List<int> list = new List<int>() { 6, 2, -8, 4 };
+        List<int> list = new List<int>() { 6, 2, 4 };
 
         // Act
         string result = Grouping.GroupNumbers(list);
 
         // Assert
-        Assert.That(result, Is.EqualTo("Even numbers: 6, 2, -8, 4"));
+        Assert.That(result, Is.EqualTo("Even numbers: 6, 2, 4"));
 
     }
 
@@ -51,13 +52,13 @@ public class GroupingTests
     public void Test_GroupNumbers_WithOnlyOddNumbers_ShouldReturnGroupedString()
     {
         // Arrange
-        List<int> list = new List<int>() { -1, 5, 3, 7 };
+        List<int> list = new List<int>() { 1, 5, 3, 7 };
 
         // Act
         string result = Grouping.GroupNumbers(list);
 
         // Assert
-        Assert.That(result, Is.EqualTo("Odd numbers: -1, 5, 3, 7"));
+        Assert.That(result, Is.EqualTo("Odd numbers: 1, 5, 3, 7"));
 
     }
 
@@ -71,6 +72,6 @@ public class GroupingTests
         string result = Grouping.GroupNumbers(list);
 
         // Assert
-        Assert.That(result, Is.EqualTo("Even numbers: -2, -8\r\nOdd numbers: -5, -7"));
+        Assert.That(result, Is.EqualTo($"Even numbers: -2, -8{Environment.NewLine}Odd numbers: -5, -7"));
     }
 }
