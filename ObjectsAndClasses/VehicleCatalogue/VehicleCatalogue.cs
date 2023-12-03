@@ -31,13 +31,13 @@ while (true)
 }
 
 StringBuilder sb = new StringBuilder();
-sb.AppendLine("Cars:");
+if(carCatalog.Count != 0) sb.AppendLine("Cars:");
 foreach (Catalog cars in carCatalog.OrderBy(c => c.CarCatalog.Brand))
 {
     sb.AppendLine($"{cars.CarCatalog.Brand}: {cars.CarCatalog.Model} - {cars.CarCatalog.HorsePower}hp");
 }
 
-sb.AppendLine("Trucks:");
+if(truckCatalog.Count != 0) sb.AppendLine("Trucks:");
 foreach (Catalog trucks in truckCatalog.OrderBy(t => t.TruckCatalog.Brand))
 {
     sb.AppendLine($"{trucks.TruckCatalog.Brand}: {trucks.TruckCatalog.Model} - {trucks.TruckCatalog.Weight}kg");
