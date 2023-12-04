@@ -4,21 +4,21 @@ namespace ExerciseOopHierarchy
 {
     public class Order
     {
-        private List<MenuItem> items = new List<MenuItem>();
+        private List<MenuItem> _items = new List<MenuItem>();
         public Order()
         {
         }
-        public IReadOnlyCollection<MenuItem> Items => this.items.AsReadOnly();
+        public IReadOnlyCollection<MenuItem> Items => this._items.AsReadOnly();
 
         public void AddItem(MenuItem item)
         {
-            this.items.Add(item);
+            this._items.Add(item);
         }
 
         public decimal GetTotal()
         {
             decimal total = 0;
-            foreach (MenuItem item in this.items)
+            foreach (MenuItem item in this._items)
             {
                 total += item.Price;
             }
@@ -26,7 +26,7 @@ namespace ExerciseOopHierarchy
         }
         public override string ToString()
         {
-            return $"{string.Join("\n ", this.items)}";
+            return $"{string.Join("\n ", this._items)}";
         }
     }
 }

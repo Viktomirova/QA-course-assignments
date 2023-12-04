@@ -5,7 +5,7 @@ namespace ExerciseOopHierarchy
 {
     public class Customer
     {
-        private List<Order> orderHistory = new List<Order>();
+        private List<Order> _orderHistory = new List<Order>();
         public Customer(string name, string email)
         {
             Name = name;
@@ -15,10 +15,10 @@ namespace ExerciseOopHierarchy
         public string Name { get; set; }
         public string Email { get; set; }
 
-        public IReadOnlyCollection<Order> OrderHistory => this.orderHistory.AsReadOnly();
+        public IReadOnlyCollection<Order> OrderHistory => this._orderHistory.AsReadOnly();
         public void AddOrder(Order order)
         {
-            orderHistory.Add(order);
+            _orderHistory.Add(order);
         }
     }
 }

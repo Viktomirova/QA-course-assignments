@@ -6,23 +6,23 @@ namespace ExerciseOopHierarchy
 {
     public class Restaurant
     {
-        private List<Customer> customers = new List<Customer>();
-        private List<MenuItem> menu = new List<MenuItem>();
+        private List<Customer> _customers = new List<Customer>();
+        private List<MenuItem> _menu = new List<MenuItem>();
         public void AddCustomer(Customer customer)
         {
-            this.customers.Add(customer);
+            this._customers.Add(customer);
         }
         public MenuItem GetMenuItem(int index)
         {
-            if (this.menu.Count < index && index < 0)
+            if (this._menu.Count < index && index < 0)
             {
                 throw new IndexOutOfRangeException();
             }
-            return this.menu[index];
+            return this._menu[index];
         }
         public void AddMenuItem(MenuItem item)
         {
-            this.menu.Add(item);
+            this._menu.Add(item);
         }
         public void PlaceOrder(Customer customer, Order order) 
         {
@@ -31,7 +31,7 @@ namespace ExerciseOopHierarchy
         public void DisplayMenu()
         {
             Console.WriteLine("Menu Items:");
-            foreach (MenuItem item in menu)
+            foreach (MenuItem item in _menu)
             {
                 Console.WriteLine(item);
             }
