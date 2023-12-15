@@ -94,6 +94,5 @@ public class CenterPointTests
 
         // Assert
         Assert.That(result, Is.EqualTo(secondPointReport));
-        // TODO: implement the test
     }
 }
