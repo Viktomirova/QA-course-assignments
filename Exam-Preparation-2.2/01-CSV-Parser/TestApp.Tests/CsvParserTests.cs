@@ -30,15 +30,15 @@ public class CsvParserTests
         string[] output = CsvParser.ParseCsv(input);
 
         // Assert
-        Assert.That(output.Length, Is.EqualTo(1));
+        Assert.That(output, Has.Length.EqualTo(1));
     }
 
     [Test]
     public void Test_ParseCsv_MultipleFields_ReturnsArrayWithMultipleElements()
     {
         // Arrange
-        string input = "input,output,parse,convert";
-        string[] expected = { "input", "output", "parse", "convert" };
+        string input = "input,a,output,parse,convert";
+        string[] expected = { "input", "a", "output", "parse", "convert" };
 
         // Act
         string[] output = CsvParser.ParseCsv(input);
@@ -51,8 +51,22 @@ public class CsvParserTests
     public void Test_ParseCsv_TrimsWhiteSpace_ReturnsCleanArray()
     {
         // Arrange
-        string input = "input ,   output   ,parse, convert ";
-        string[] expected = { "input", "output", "parse", "convert" };
+        string input = "       ";
+        string[] expected = { "" };
+
+        // Act
+        string[] output = CsvParser.ParseCsv(input);
+
+        // Assert
+        Assert.That(output, Is.EqualTo(expected));
+    }
+
+    [Test]
+    public void Test_ParseCsv_TrimsWhiteSpace_ReturnsArray()
+    {
+        // Arrange
+        string input = " input , a output   ,parse, convert  ";
+        string[] expected = { "input", "a output", "parse", "convert" };
 
         // Act
         string[] output = CsvParser.ParseCsv(input);
