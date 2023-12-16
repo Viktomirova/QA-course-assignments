@@ -46,11 +46,6 @@ public class ChatRoomTests
     public void Test_DisplayChat_WithMessages_ReturnsFormattedChat()
     {
         // Arrange
-        StringBuilder sb = new();
-        sb.AppendLine("Chat Room Messages:");
-        sb.AppendLine("Sasho: Hello - Sent at 16");
-        sb.AppendLine("Misho: Hi, there! - Sent at 16");
-        string expected = sb.ToString().Trim();
 
         // Act
         _chatRoom.SendMessage("Sasho", "Hello");
