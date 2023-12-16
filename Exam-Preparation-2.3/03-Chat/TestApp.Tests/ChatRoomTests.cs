@@ -1,4 +1,5 @@
 using System;
+using System.Text;
 
 using NUnit.Framework;
 
@@ -10,28 +11,54 @@ namespace TestApp.Tests;
 public class ChatRoomTests
 {
     private ChatRoom _chatRoom = null!;
-    
+
     [SetUp]
     public void Setup()
     {
         this._chatRoom = new();
     }
-    
+
     [Test]
     public void Test_SendMessage_MessageSentToChatRoom()
     {
-        // TODO: finish the test
+        // Arrange
+
+        // Act
+        _chatRoom.SendMessage("Sasho", "Hello");
+
+        // Assert
+        Assert.That(_chatRoom.DisplayChat, Does.Contain("Sasho: Hello"));
     }
 
     [Test]
     public void Test_DisplayChat_NoMessages_ReturnsEmptyString()
     {
-        // TODO: finish the test
+        // Arrange
+        string expected = string.Empty;
+
+        // Act
+
+        // Assert
+        Assert.That(_chatRoom.DisplayChat, Is.EqualTo(expected));
     }
 
     [Test]
     public void Test_DisplayChat_WithMessages_ReturnsFormattedChat()
     {
-        // TODO: finish the test
+        // Arrange
+        StringBuilder sb = new();
+        sb.AppendLine("Chat Room Messages:");
+        sb.AppendLine("Sasho: Hello - Sent at 16");
+        sb.AppendLine("Misho: Hi, there! - Sent at 16");
+        string expected = sb.ToString().Trim();
+
+        // Act
+        _chatRoom.SendMessage("Sasho", "Hello");
+        _chatRoom.SendMessage("Misho", "Hi, there!");
+
+        // Assert
+        Assert.That(_chatRoom.DisplayChat, Does.Contain("Chat Room Messages:"));
+        Assert.That(_chatRoom.DisplayChat, Does.Contain("Sasho: Hello - Sent"));
+        Assert.That(_chatRoom.DisplayChat, Does.Contain("Misho: Hi, there! - Sent"));
     }
 }
